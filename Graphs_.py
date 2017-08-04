@@ -1,6 +1,6 @@
 """
 #AUTHOR - Ashish Kumar Jayant
-#TITLE - UNDIRECTED GRAPHS FROM SCRATCH IN PYTHON
+#TITLE - Undirected Graphs from scratch in python
 """
 from collections import defaultdict
 
