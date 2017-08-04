@@ -9,8 +9,7 @@ class Graph(object):
         self.graph = defaultdict(list)          
     def add_edge(self,u,v):
         self.graph[u].append(v)
-        self.graph[v].append(u)
-        
+        self.graph[v].append(u)        
     def traverse(self,u):  #breadth first traversal
         visited = {}
         queue = []
