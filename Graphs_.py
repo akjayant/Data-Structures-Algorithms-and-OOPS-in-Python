@@ -1,8 +1,12 @@
+"""
+#AUTHOR - Ashish Kumar Jayant
+#TITLE - GRAPHS FROM SCRATCH IN PYTHON
+"""
 from collections import defaultdict
+
 class Graph(object):
     def __init__(self):
-        self.graph = defaultdict(list)      
-        
+        self.graph = defaultdict(list)          
     def add_edge(self,u,v):
         self.graph[u].append(v)
         self.graph[v].append(u)
@@ -18,16 +22,12 @@ class Graph(object):
             for i in self.graph[u]:
                 if i not in visited.keys():
                     queue.append(i)
-                    visited[i] = True 
-                    
-    def check_path(self,u,v):  #to check if a connection exists between nodes
-        u-=1
-        v-=1
+                    visited[i] = True                    
+    def check_path(self,u,v):  #to check if a connection exists between node
         visited = {}
         queue = []
         queue.append(u)
-        visited[u]=True
-        
+        visited[u]=True        
         while queue:
             n = queue.pop(0)
             if n==v:
