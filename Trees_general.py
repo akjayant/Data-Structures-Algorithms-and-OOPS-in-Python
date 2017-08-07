@@ -83,15 +83,19 @@ for j in range(q):
     
     
   """
-#input format 
-<parent> <element> <type - left child/right child>
+Input format  for user - 
+<parent> <element> <type - *left child(L)/right child(R)>
+                1
+            3       2
+          7   6   5   4
+                    
+e.g. -                                           
 1 2 R
 1 3 L
 2 4 R
 2 5 L
 3 6 R
 3 7 L
-5 8 R
+
 """
-5 9 L
-7 10 R
+
